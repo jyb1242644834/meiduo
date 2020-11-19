@@ -1,9 +1,14 @@
 #!/usr/bin/env python
+
+# -*- coding:utf-8 -*-
 import os
 import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "meiduo_mall.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "meiduo_mall.settings.dev")
     try:
         from django.core.management import execute_from_command_line
     except ImportError:
